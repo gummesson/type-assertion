@@ -1,0 +1,43 @@
+{
+  "name": "type-assertion",
+  "version": "0.0.0",
+  "description": "Assert the type of a value.",
+  "main": "index.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gummesson/type-assertion.git"
+  },
+  "keywords": [
+    "assert",
+    "assertion",
+    "assertions",
+    "type",
+    "types"
+  ],
+  "author": "Ellen Gummesson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gummesson/type-assertion/issues"
+  },
+  "homepage": "https://github.com/gummesson/type-assertion",
+  "dependencies": {
+    "obj-type": "^1.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^11.1.0",
+    "covert": "^1.1.0",
+    "smokestack": "^3.3.1",
+    "tap-closer": "^1.0.0",
+    "tape": "^4.2.0"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "test:browser": "browserify test.js | tap-closer | smokestack",
+    "test:cover": "covert test.js"
+  }
+}
